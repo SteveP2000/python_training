@@ -1,0 +1,51 @@
+Written in C++
+Python bindings
+
+Run a script on
+	startup
+	project open, save or close
+Customer expressions
+Python console & scripts
+Processing scripts
+Plugins
+Standalone applications
+
+Processing toolbox - run individual algorithms on data - Vorinoi programme (modeller in ESRI)
+	Algoritms available in QGIS
+	Include bespoke algorithms
+
+Python basics
+
+latitude = 51.5
+if latitude >= 0:
+	zone_letter = 'N'
+else:
+	zone_letter = 'S'
+print zone_letter
+
+for char in "Hello World!":
+	print char
+
+for num in [3, 5, 4, 2, 1]:
+	print num
+
+--QGIS Code
+iface.activeLayer().name() --iface = QGIS interface
+help(iface.activeLayer())
+
+https://qgis.org/api/classQgsVectorLayer.html
+http://geoapis.sourcepole.com/qgispyapi/
+
+sorted([2,3,4,6,2,5,2])
+
+
+def GetUtmZone(longitude,latitude):
+	zone_number = math.floor((longitude + 180) / 6) + 1
+	if latitude >= 0:
+		zone_letter = 'N'
+	else:
+		zone_letter = 'S'
+	return '%d%s' % (int(zone_number), zone_letter)
+	
+Query in expression editor
+Post to Issues on GitHub to ask questions
